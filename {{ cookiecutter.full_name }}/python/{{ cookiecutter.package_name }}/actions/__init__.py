@@ -1,0 +1,1 @@
+"""Actions defined in {{ cookiecutter.full_name }}."""

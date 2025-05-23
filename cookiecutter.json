@@ -1,4 +1,8 @@
 {
+
   "project_name": "demo",
+  "ecosystem": "fabricatio",
+  "full_name": "{{ cookiecutter.ecosystem }}-{{ cookiecutter.project_name }}",
+  "package_name": "{{ cookiecutter.ecosystem }}_{{ cookiecutter.project_name }}",
   "description": "An extension of fabricatio."
 }

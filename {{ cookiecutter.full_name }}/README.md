@@ -1,4 +1,4 @@
-# `fabricatio-{{ cookiecutter.project_name }}`
+# `{{ cookiecutter.full_name }}`
 
 {{ cookiecutter.description }}.
 
