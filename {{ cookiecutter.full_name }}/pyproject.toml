@@ -15,6 +15,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 
+requires-python = ">=3.12,<3.14"
 
 dependencies = [
     "fabricatio-core",
