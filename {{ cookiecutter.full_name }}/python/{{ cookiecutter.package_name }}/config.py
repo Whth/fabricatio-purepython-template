@@ -1,7 +1,7 @@
 """Module containing configuration classes for {{ cookiecutter.full_name }}."""
 from dataclasses import dataclass
 from fabricatio_core import CONFIG
-@dataclass
+@dataclass(frozen=True)
 class {{ cookiecutter.project_name|capitalize }}Config:
     """ Configuration for {{ cookiecutter.full_name }}"""
 
