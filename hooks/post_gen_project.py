@@ -60,7 +60,7 @@ if pyproject_path.exists():
     # Add tool.uv.sources entry
     if '[tool.uv.sources]' not in content:
         # Add the entire section
-        sources_section = f'\n[tool.uv.sources]\n{full_name} = {{ workspace = true }}\n'
+        sources_section = f'\n[tool.uv.sources]\n{full_name} = {{% raw %}}{{ workspace = true }}{{% endraw %}}\n'
         content = content.rstrip() + sources_section
     else:
         # Find the sources section and add our entry
@@ -76,7 +76,7 @@ if pyproject_path.exists():
             while insert_point > 0 and content[insert_point - 1] in '\n\r':
                 insert_point -= 1
             
-            new_entry = f'{full_name} = {{ workspace = true }}\n'
+            new_entry = f'{full_name} = {{% raw %}}{{ workspace = true }}{{% endraw %}}\n'
             content = content[:insert_point] + new_entry + content[insert_point:]
     
     # Write back the updated pyproject.toml
