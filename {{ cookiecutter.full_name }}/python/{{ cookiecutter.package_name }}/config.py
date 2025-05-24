@@ -1,3 +1,4 @@
+"""Module containing configuration classes for {{ cookiecutter.full_name }}."""
 from dataclasses import dataclass
 
 @dataclass
