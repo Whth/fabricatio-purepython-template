@@ -93,24 +93,22 @@ actions = [
 """
 
 
-import os
+from pathlib import Path
+
 import tomlkit
 
 # Get the project name from the cookiecutter context
 project_name = "{{ cookiecutter.project_name }}"
 
 # Path to the root pyproject.toml file (assuming it's in the parent directory)
-pyproject_path = "../pyproject.toml"
+pyproject_path:Path = Path.cwd()/"pyproject.toml"
 
-if not os.path.exists(pyproject_path):
+if not project_name.is_file():
     print(f"Warning: {pyproject_path} not found")
     exit(1)
 
-# Read the existing pyproject.toml
-with open(pyproject_path, "r", encoding="utf-8") as f:
-    content = f.read()
 
-doc = tomlkit.parse(content)
+doc = tomlkit.parse(pyproject_path.read_text("utf-8"))
 
 # Add to [tool.uv.sources]
 if "tool" not in doc:
