@@ -92,7 +92,6 @@ actions = [
 ```
 """
 
-
 from pathlib import Path
 
 import tomlkit
@@ -118,8 +117,11 @@ if "uv" not in doc["tool"]:
 if "sources" not in doc["tool"]["uv"]:
     doc["tool"]["uv"]["sources"] = tomlkit.table()
 
-# Add the new project source
-doc["tool"]["uv"]["sources"][f"fabricatio-{project_name}"] = {"workspace": True}
+# Add the new project source with inline table format
+sources_table = doc["tool"]["uv"]["sources"]
+inline_table = tomlkit.inline_table()
+inline_table["workspace"] = True
+sources_table[f"fabricatio-{project_name}"] = inline_table
 
 # Add to [project.optional-dependencies]
 if "project" not in doc:
