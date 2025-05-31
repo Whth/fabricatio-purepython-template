@@ -101,7 +101,7 @@ import tomlkit
 project_name = "{{ cookiecutter.project_name }}"
 
 # Path to the root pyproject.toml file (assuming it's in the parent directory)
-pyproject_path:Path = Path.cwd()/"pyproject.toml"
+pyproject_path:Path = Path.cwd().parent.parent/"pyproject.toml"
 
 if not pyproject_path.exists():
     print(f"Warning: {pyproject_path} not found")
