@@ -104,7 +104,7 @@ pyproject_path = "../pyproject.toml"
 
 if not os.path.exists(pyproject_path):
     print(f"Warning: {pyproject_path} not found")
-    return
+    exit(1)
 
 # Read the existing pyproject.toml
 with open(pyproject_path, "r", encoding="utf-8") as f:
