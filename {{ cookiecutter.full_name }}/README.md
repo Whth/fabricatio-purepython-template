@@ -5,7 +5,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/{{ cookiecutter.full_name }})](https://pypi.org/project/{{ cookiecutter.full_name }}/)
 [![PyPI Downloads](https://static.pepy.tech/badge/{{ cookiecutter.full_name }}/week)](https://pepy.tech/projects/{{ cookiecutter.full_name }})
 [![PyPI Downloads](https://static.pepy.tech/badge/{{ cookiecutter.full_name }})](https://pepy.tech/projects/{{ cookiecutter.full_name }})
-[![Build Tool: uv](https://img.shields.io/badge/built%20with-uv%20%2B%20maturin-orange)](https://github.com/astral-sh/uv)
+[![Build Tool: uv](https://img.shields.io/badge/built%20with-uv-orange)](https://github.com/astral-sh/uv)
 
 
 {{ cookiecutter.description }}.
@@ -18,12 +18,18 @@ This package is part of the `fabricatio` monorepo and can be installed as an opt
 
 ```bash
 pip install fabricatio[{{ cookiecutter.project_name }}]
+
+# or with uv
+# uv pip install fabricatio[full]
 ```
 
 Or install all components:
 
 ```bash
 pip install fabricatio[full]
+
+# or with uv
+# uv pip install fabricatio[full]
 ```
 
 ## 🔍 Overview
@@ -48,6 +54,4 @@ Core dependencies:
 
 ## 📄 License
 
-MIT – see [LICENSE](LICENSE)
-
-GitHub: [github.com/Whth/fabricatio](https://github.com/Whth/fabricatio)
+This project is licensed under the {{ cookiecutter.license }} License.

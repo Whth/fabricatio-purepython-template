@@ -1,5 +1,7 @@
 {
-
+  "auther": "jane doe",
+  "email": "jane.doe@example.com",
+  "license": "MIT",
   "project_name": "demo",
   "ecosystem": "fabricatio",
   "full_name": "{{ cookiecutter.ecosystem }}-{{ cookiecutter.project_name }}",

@@ -142,7 +142,7 @@ if "full" in doc["project"]["optional-dependencies"]:
                 # Extract the current extras
                 start = dep.find("[") + 1
                 end = dep.find("]")
-                if start > 0 and end > start:
+                if 0 < start < end:
                     current_extras = dep[start:end]
                     # Add the new project to the extras
                     new_extras = f"{current_extras},{project_name}"
