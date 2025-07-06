@@ -1,6 +1,6 @@
 # `{{ cookiecutter.full_name }}`
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![{{ cookiecutter.license }}](https://img.shields.io/badge/license-{{cookiecutter.license}}-blue.svg)]
 ![Python Versions](https://img.shields.io/pypi/pyversions/{{ cookiecutter.full_name }})
 [![PyPI Version](https://img.shields.io/pypi/v/{{ cookiecutter.full_name }})](https://pypi.org/project/{{ cookiecutter.full_name }}/)
 [![PyPI Downloads](https://static.pepy.tech/badge/{{ cookiecutter.full_name }}/week)](https://pepy.tech/projects/{{ cookiecutter.full_name }})
