@@ -20,10 +20,10 @@ This package is part of the `fabricatio` monorepo and can be installed as an opt
 pip install fabricatio[{{ cookiecutter.project_name }}]
 
 # or with uv
-# uv pip install fabricatio[full]
+# uv pip install fabricatio[{{ cookiecutter.project_name }}]
 ```
 
-Or install all components:
+Or install `fabricatio-diff` along with all other components of `fabricatio`:
 
 ```bash
 pip install fabricatio[full]
