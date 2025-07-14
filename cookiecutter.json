@@ -6,5 +6,5 @@
   "ecosystem": "fabricatio",
   "full_name": "{{ cookiecutter.ecosystem }}-{{ cookiecutter.project_name }}",
   "package_name": "{{ cookiecutter.ecosystem }}_{{ cookiecutter.project_name }}",
-  "description": "An extension of fabricatio."
+  "description": "An extension of fabricatio that provide capabilities for {{ cookiecutter.project_name }}"
 }
